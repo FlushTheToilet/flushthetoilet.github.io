@@ -34,6 +34,10 @@ var tabl_audio_pchit = [audio_pchit1, audio_pchit2];
 var tabl_audio_sponge = [audio_sponge1, audio_sponge2, audio_sponge3];
 
 
+function update() {
+	document.getElementById('scoreboard').innerHTML = '<p id="scoreboard">Score : ' + score + ' - - - Mouvements : ' + moves + '</p>';
+}
+update();
 
 function validate() {
 	audio_chasse_deau.play();
@@ -47,6 +51,7 @@ function validate() {
 function count_moves() {
 	moves++;
 	console.log('--- Mouvement ' + moves + ' :');
+	update();
 	return moves;
 }
 
@@ -60,6 +65,7 @@ function destroy(ev) {
 	for (var i = 0; i < items.length; i++) {
 		items[i].setAttribute('ondragstart', "drag(event);");
 	}
+	update();
 }
 
 function drag(ev) {
@@ -354,6 +360,7 @@ function drop(ev) {
 
 				ev.preventDefault();
 				score++;
+				update();
 				
 				setTimeout(function() {
 					ev.target.id = 'sol_propre';
