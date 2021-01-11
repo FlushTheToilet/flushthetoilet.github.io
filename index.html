@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flush the toilet !</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="shortcut icon" type="image/png" href="medias/environnement/wc.png">
+	<script type="text/javascript" src="js.js" defer></script>
+</head>
+<body>
+	<div id="page">
+
+		<div id="jeu">
+			<img id="mur" src="medias/environnement/mur.png" ondragstart="return false;">
+			<img id="sol_sale" src="medias/environnement/sol_sale.png" ondragover="detect(event);" ondrop="drop(event);" ondragstart="return false;">
+
+			<img id="tag1" src="medias/tags/tag_1.png" ondragover="detect(event);" ondrop="drop(event);" ondragstart="return false;">
+			<img id="tag2" src="medias/tags/tag_2.png" ondragover="detect(event);" ondrop="drop(event);" ondragstart="return false;">
+			<img id="tag3" src="medias/tags/tag_3.png" ondragover="detect(event);" ondrop="drop(event);" ondragstart="return false;">
+
+			<img id="chasse_deau" src="medias/environnement/chasse_deau.png" ondragstart="return false;">
+			<img id="wc" src="medias/environnement/wc.png" ondragstart="return false;">
+			<img id="corde_chasse_deau" src="medias/environnement/corde_chasse_deau.png" onclick="validate();" ondragstart="return false;">
+
+			<img id="calcaire_couvercle" src="medias/calcaire/salissure_couvercle.png" ondragover="detect(event);" ondrop="drop(event);" ondragstart="return false;">
+			<img id="calcaire_cuvette" src="medias/calcaire/salissure_cuvette.png" ondragover="detect(event);" ondrop="drop(event);" ondragstart="return false;">
+			<img id="calcaire_pied" src="medias/calcaire/salissure_pied.png" ondragover="detect(event);" ondrop="drop(event);" ondragstart="return false;">
+
+			<img id="mousse_chasse_deau" src="medias/mousse/mousses_chasse_deau.png" ondragover="detect(event);" ondrop="drop(event);" ondragstart="return false;">
+			<img id="mousse_cuvette_ext" src="medias/mousse/mousses_cuvette_ext.png" ondragover="detect(event);" ondrop="drop(event);" ondragstart="return false;">
+			<img id="mousse_cuvette_int" src="medias/mousse/mousses_cuvette_int.png" ondragover="detect(event);" ondrop="drop(event);" ondragstart="return false;">
+
+			<img id="pisse_couvercle" src="medias/pisse/pisse_couvercle.png" ondragover="detect(event);" ondrop="drop(event);" ondragstart="return false;">
+			<img id="pisse_cuvette" src="medias/pisse/pisse_cuvette.png" ondragover="detect(event);" ondrop="drop(event);" ondragstart="return false;">
+			<img id="pisse_sol" src="medias/pisse/pisse_sol.png" ondragover="detect(event);" ondrop="drop(event);" ondragstart="return false;">
+
+			<img id="caca_cuvette_1" src="medias/caca/caca_cuvette_1.png" ondragover="detect(event);" ondrop="drop(event);" ondragstart="return false;">
+			<img id="caca_cuvette_2" src="medias/caca/caca_cuvette_2.png" ondragover="detect(event);" ondrop="drop(event);" ondragstart="return false;">
+			<img id="caca_cuvette_3" src="medias/caca/caca_cuvette_3.png" ondragover="detect(event);" ondrop="drop(event);" ondragstart="return false;">
+			<img id="caca_pied" src="medias/caca/caca_pied.png" ondragover="detect(event);" ondrop="drop(event);" ondragstart="return false;">
+
+			
+		</div>
+
+		<div id="inventaire">
+			<div id="ustensiles">
+				<img class="items sponge" id="sponge" src="medias/items/png/sponge.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
+				<img class="items brosse" id="brosse" src="medias/items/png/brosse.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
+				<img class="items" id="brosseWC" src="medias/items/png/brosseWC.png" ondragstart="drag(event);" draggable="true">
+				<img class="items pelle" id="pelle_vide" src="medias/items/png/pelle_vide.png" ondragstart="drag(event);" draggable="true">
+			</div>
+
+			<div id="produits">
+				<img class="items" id="javel" src="medias/items/png/javel.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
+				<img class="items pchit" id="pchit_vide" src="medias/items/png/pchit_vide.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
+				<img class="items" id="vinaigre" src="medias/items/png/vinaigre.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
+				<img class="items" id="bicarbonate" src="medias/items/png/bicarbonate.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
+			</div>
+
+			<div id="contenants">
+				<img id="poubelle" src="medias/items/png/poubelle_fermee.png" ondragover="detect(event);" ondrop="drop(event);" ondragleave="document.getElementById('poubelle').src = 'medias/items/png/poubelle_fermee.png';" ondragstart="return false;">
+				<img class="items" id="seau" src="medias/items/png/seau.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
+			</div>
+		</div>
+
+		<div id="info">
+			<p style="color: white; margin: 5%; font-size: 1.2em;">
+				Pour nettoyer les tags, il faut une brosse dite "imbibée". Ce mélange se réalise en versant de la javel et du bicarbonate sur la brosse. Il suffira ensuite de brosser les tags. Noter que la brosse peut se nettoyer dans le seau ensuite.
+				<br><br>
+				La pelle sert à ramasser les cacas. Une fois ramassé avec la pelle, le caca doit être versé dans la poubelle.
+				<br><br>
+				Pour nettoyer la pisse, il faut utiliser une éponge imbibée de javel. La pisse au sol, tout comme les traces sales au sol, doivent être nettoyées avec un seau javelisé (donc de la javel doit y être versée). L'éponge également peut être rincée dans le seau.
+				<br><br>
+				La moisissure se nettoie en pulvérisant de la javel avec le pchit, puis en passant la brosse dessus. Si du produit est déposé sur la brosse (bicarbonate ou javel), on peut la nettoyer dans le seau. A noter qu'il faut utiliser la brosse WC (avec le manche) pour nettoyer la mousse en intérieur.
+				<br><br>
+				Du calcaire est présent dans la cuvette, sur le couvercle et le pied des WC. Pour le nettoyer, il faut pulvériser du vinaigre blanc, verser du bicarbonate et brosser. Attention : le bicarbonate ne peut être versé sur le couvercle ni le pied des WC (sans quoi il tomberait). Il est conseillé de verser le bicarbonate sur la brosse puis brossé après avoir pulvériser le vinaigre blanc bien sûr.
+				<br><br>
+				On peut mettre de la javel et du vinaigre blanc dans le pchit, mais celui-ci doit-être vide (ex : si le pchit est plein de javel, et qu'il faut mettre du vinaigre blanc, il faut vider le pchit dans le seau puis mettre le vinaigre blanc).
+				<br><br>
+				/!\ Attention bug éventuel : il faut nettoyer la pisse sur la cuvette avant de s'attaquer au nettoyage complet de la cuvette /!\
+			</p>
+		</div>
+
+		<audio id="idle_music" autoplay loop>
+			<source src="medias/MUSICS/ghouls_n_ghosts.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+</body>
+</html>

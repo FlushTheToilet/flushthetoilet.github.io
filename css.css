@@ -1,0 +1,281 @@
+/* CORPS DE PAGE */
+
+body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	/* Empêcher la sélection des éléments */
+    -webkit-user-select: none;
+    -html-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+#page {
+	height: 100%;
+	width: 100%;
+}
+
+#jeu {
+	background-color: red;
+	height: 100%;
+	width: 50%;
+	float: left;
+	position: relative;
+}
+
+#inventaire {
+	background-color: blue;
+	height: 100%;
+	width: 20%;
+	float: left;
+	position: relative;
+}
+
+#info {
+	background-color: green;
+	height: 100%;
+	width: 30%;
+	float: left;
+	position: relative;
+}
+
+
+/* IMAGES JEU */
+
+/* ENVIRONNEMENT */
+#mur {
+	position: absolute;
+	top: 0;
+	height: 75%;
+	width: 100%;
+}
+
+#sol_sale, #sol_propre {
+	position: absolute;
+	top: 75%;
+	height: 25%;
+	width: 100%;
+}
+
+#wc {
+	position: absolute;
+	left: 37.5%;
+	top: 40%;
+	height: 50%;
+	width: 26%;
+}
+
+#chasse_deau {
+	position: absolute;
+	height: 59.5%;
+	width: 27.2%;
+	left: 36.4%;
+}
+
+#corde_chasse_deau {
+	position: absolute;
+	height: 14%;
+	width: 1.6%;
+	left: 58.1%;
+	top: 7%;
+}
+
+#tag1 {
+	position: absolute;
+	width: 46.2%;
+	height: 44.5%;
+	left: 0%;
+	top: 20%;
+}
+
+#tag2 {
+	position: absolute;
+	width: 26.1%;
+	height: 13.5%;
+	left: 68%;
+	top: 55%;
+}
+
+#tag3 {
+	position: absolute;
+	width: 30.4%;
+	height: 17%;
+	left: 64%;
+	top: 7.5%;
+}
+
+#balais {
+	position: absolute;
+	height: 50%;
+	width: 60%;
+	left: 18%;
+	top: 44%;
+}
+
+
+/* CALCAIRE */
+#calcaire_couvercle, #calcaire_couvercle_vinaigre {
+	position: absolute;
+	width: 18.5%;
+	height: 19.5%;
+	left: 41.3%;
+	top: 41%;
+}
+
+#calcaire_pied, #calcaire_pied_vinaigre {
+	position: absolute;
+	width: 22.3%;
+	height: 19.5%;
+	left: 39.7%;
+	top: 70.5%;
+}
+
+#calcaire_cuvette, #calcaire_cuvette_bicarbonate, #calcaire_cuvette_vinaigre, #calcaire_cuvette_traite {
+	position: absolute;
+	width: 25.5%;
+	height: 9.5%;
+	left: 38%;
+	top: 61.5%;
+}
+
+/* MOUSSES */
+#mousse_chasse_deau, #mousse_chasse_deau_traitee {
+	position: absolute;
+	width: 27.2%;
+	height: 4%;
+	left: 36.4%;
+	top: 0%;
+}
+
+#mousse_cuvette_ext, #mousse_cuvette_ext_traitee {
+	position: absolute;
+	width: 25.5%;
+	height: 5.5%;
+	left: 37.5%;
+	top: 69%;
+}
+
+#mousse_cuvette_int, #mousse_cuvette_int_traitee {
+	position: absolute;
+	width: 16.3%;
+	height: 4%;
+	left: 42.4%;
+	top: 63.5%;
+}
+
+/* CACAS */
+#caca_cuvette_1 {
+	position: absolute;
+	width: 11.4%;
+	height: 4%;
+	left: 48.9%;
+	top: 61%;
+}
+
+#caca_cuvette_2 {
+	position: absolute;
+	width: 4.9%;
+	height: 3.5%;
+	left: 37.5%;
+	top: 64%;
+}
+
+#caca_cuvette_3 {
+	position: absolute;
+	width: 6%;
+	height: 3%;
+	left: 49%;
+	top: 67.5%;
+}
+
+#caca_pied {
+	position: absolute;
+	width: 14.6%;
+	height: 3%;
+	left: 43%;
+	top: 87%;
+}
+
+/* PIPIS */
+#pisse_cuvette {
+	position: absolute;
+	width: 22.3%;
+	height: 9%;
+	left: 39.1%;
+	top: 61.5%;
+}
+
+#pisse_couvercle {
+	position: absolute;
+	width: 14.6%;
+	height: 15%;
+	left: 43.5%;
+	top: 44%;
+}
+
+#pisse_sol {
+	position: absolute;
+	width: 47.3%;
+	height: 10.5%;
+	left: 26.1%;
+	top: 85%;
+}
+
+
+/* ITEMS */
+#ustensiles {
+	display: inline-block;
+	margin: 6% 8% 2% 8%;
+	height: 8%;
+	width: 80%;
+}
+#ustensiles > img {
+	margin: 0% 1%;
+	height: 100%;
+	width: 21%;
+}
+.pelle, .sponge, .brosse{
+	max-height: 40%;
+}
+
+
+#produits {
+	display: inline-block;
+	margin: 6% 10% 2% 10%;
+	height: 10%;
+	width: 80%;
+}
+#produits > img {
+	margin: 0% 2%;
+	height: 100%;
+	width: 24%;
+}
+#bicarbonate {
+	max-height: 66%;
+	max-width: 20%;
+}
+#vinaigre {
+	max-width: 10%;
+}
+.pchit {
+	max-width: 18%;
+}
+
+
+#contenants {
+	display: inline-block;
+	margin: 4% 10% 2% 10%;
+	height: 16%;
+	width: 80%;
+}
+#contenants > img {
+	margin: 0% 3%;
+	height: 100%;
+	width: 40%;
+}
+#poubelle {
+	max-height: 70%;
+}
