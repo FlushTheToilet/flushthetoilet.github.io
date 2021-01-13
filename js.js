@@ -5,7 +5,7 @@ var c = 0;
 var id_balais = 1;
 var items = document.getElementsByClassName("items");
 
-document.getElementById('idle_music').volume = 0.6;
+document.getElementById('idle_music').volume = 0.4;
 
 // Ces tableaux permettent de mettre en image les différents volumes de produit dans le pulvérisateur
 var tabl_pchit_javel = ['pchit_javel_plein', 'pchit_javel_presque_plein', 'pchit_javel_un_peu_vide', 'pchit_javel_presque_vide', 'pchit_vide'];
