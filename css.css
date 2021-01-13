@@ -296,9 +296,11 @@ span {
 	text-decoration: underline;
 }
 
-p {
+#info > p {
+	width: 90%;
 	color: white;
 	margin: 5%;
 	font-size: 1.2em;
 	text-align: justify;
 }
+
