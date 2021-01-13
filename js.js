@@ -43,8 +43,12 @@ function validate() {
 	audio_chasse_deau.play();
 	if (score == 17) {
 		alert("Bravo ! Les toilettes sont archis propres ! Tu as réalisé " + moves + " mouvements.");
-	} else {
-		alert("Non ! Les toilettes ne sont pas propres, tout doit être lavé ! Ton score est de " + score + " avec " + moves + " mouvements.")
+	} else if (score == 0) {
+		alert("Tu rigoles ? T'as encore rien fait ! BOSSE UN PEU, ET PLUS VITE ! Ton score est de " + score + " avec " + moves + " mouvements.");
+	} else if (score > 0 && score < 12) {
+		alert("Non ! Les toilettes ne sont pas propres, tout doit être lavé ! Ton score est de " + score + " avec " + moves + " mouvements.");
+	} else if (score >= 12 && score < 17) {
+		alert("Bof... Les toilettes sont presque propres, mais il resque quelques saletés ! Ton score est de " + score + " avec " + moves + " mouvements.");
 	}
 }
 
