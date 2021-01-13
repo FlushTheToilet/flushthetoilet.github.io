@@ -288,3 +288,11 @@ body {
 #poubelle {
 	max-height: 70%;
 }
+
+
+
+/* INFORMATIONS / NOTICE */
+
+span {
+	text-decoration: underline;
+}
