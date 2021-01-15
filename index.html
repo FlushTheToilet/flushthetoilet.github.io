@@ -65,68 +65,75 @@
 			
 		</div>
 
-		<div id="inventaire">
-			<div id="ustensiles">
-				<img class="items sponge" id="sponge" src="medias/items/png/sponge.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
-				<img class="items brosse" id="brosse" src="medias/items/png/brosse.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
-				<img class="items" id="brosseWC" src="medias/items/png/brosseWC.png" ondragstart="drag(event);" draggable="true">
-				<img class="items pelle" id="pelle_vide" src="medias/items/png/pelle_vide.png" ondragstart="drag(event);" draggable="true">
+		<div id="panneau">
+			<div id="inventaire">
+				<div id="ustensiles">
+					<div class="column">
+						<img class="items sponge" id="sponge" src="medias/items/png/sponge.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
+					</div>
+					<div class="column">
+						<img class="items brosse" id="brosse" src="medias/items/png/brosse.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
+					</div>
+					<div class="column">
+						<img class="items brosseWC" id="brosseWC" src="medias/items/png/brosseWC.png" ondragstart="drag(event);" draggable="true">
+					</div>
+					<div class="column">
+						<img class="items pelle" id="pelle_vide" src="medias/items/png/pelle_vide.png" ondragstart="drag(event);" draggable="true">
+					</div>
+				</div>
+
+				<div id="produits">
+					<div class="column">
+						<img class="items javel" id="javel" src="medias/items/png/javel.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
+					</div>
+					<div class="column">
+						<img class="items pchit" id="pchit_vide" src="medias/items/png/pchit_vide.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
+					</div>
+					<div class="column">
+						<img class="items vinaigre" id="vinaigre" src="medias/items/png/vinaigre.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
+					</div>
+					<div class="column">
+						<img class="items bicarbonate" id="bicarbonate" src="medias/items/png/bicarbonate.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
+					</div>
+				</div>
+
+				<div id="contenants">
+					<div class="column">
+						<img id="poubelle" src="medias/items/png/poubelle_fermee.png" ondragover="detect(event);" ondrop="drop(event);" ondragleave="document.getElementById('poubelle').src = 'medias/items/png/poubelle_fermee.png';" ondragstart="return false;">
+					</div>
+					<div class="column">
+						<img class="items seau" id="seau" src="medias/items/png/seau.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
+					</div>
+				</div>
 			</div>
 
-			<div id="produits">
-				<img class="items" id="javel" src="medias/items/png/javel.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
-				<img class="items pchit" id="pchit_vide" src="medias/items/png/pchit_vide.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
-				<img class="items" id="vinaigre" src="medias/items/png/vinaigre.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
-				<img class="items" id="bicarbonate" src="medias/items/png/bicarbonate.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
-			</div>
-
-			<div id="contenants">
-				<img id="poubelle" src="medias/items/png/poubelle_fermee.png" ondragover="detect(event);" ondrop="drop(event);" ondragleave="document.getElementById('poubelle').src = 'medias/items/png/poubelle_fermee.png';" ondragstart="return false;">
-				<img class="items" id="seau" src="medias/items/png/seau.png" ondragstart="drag(event);" ondragover="detect(event);" ondrop="drop(event);" draggable="true">
+			<div id="menu">
+				<audio id="idle_music" autoplay loop controls>
+					<source src="medias/MUSICS/ghouls_n_ghosts.mp3" type="audio/mpeg">
+				</audio>
+				<p>Musique :<br>Ghouls 'N' Ghosts Amiga - Main Theme</p>
+				<div id="menu-content">
+					<button id="restart" onmouseover="audio_button_hover.play();" onclick="audio_button_click.play(); setTimeout(function() {window.location.reload(true);}, 200);">Play again</button>
+					<p id="scoreboard"></p>
+				</div>
 			</div>
 		</div>
 
 		<div id="info">
-			<p>
-				<span>Step 1 :</span> Nettoyer les tags = il faut une brosse "imbibée". Ce mélange se réalise en pulvérisant de la javel et en versant du bicarbonate sur la brosse. Il suffira ensuite de brosser les tags.
-				<br><span>NB :</span> La brosse peut se nettoyer dans le seau ensuite.
-
-				<br><br>
-
-				<span>Step 2 :</span> Ramasser les cacas = il faut utiliser une pelle (vide de préférence). Une fois ramassé avec la pelle, le caca doit être versé dans la poubelle.
-				
-				<br><br>
-
-				<span>Step 3 :</span> Nettoyer la pisse = il faut une éponge imbibée de javel pour la pisse sur la cuvette et le couvercle. La pisse au sol doit être nettoyées avec un seau javelisé.
-				<br><span>NB :</span> Nettoyez la pisse sur la cuvette avant de vous attaquer au nettoyage complet de la cuvette.
-				<br><span>NB :</span> L'éponge peut être rincée dans le seau.
-				
-				<br><br>
-
-				<span>Step 4 :</span> La moisissure = à nettoyer en pulvérisant de la javel (avec le pulvérisateur), puis en passant la brosse dessus. Utilisez la brosse de WC pour brosser la moisissure en cuvette. 
-				<br><span>NB :</span> Si du produit est déposé sur la brosse, il sera impossible de brosser la moisissure. Rincez la brosse dans le seau pour enlever le produit.
-				
-				<br><br>
-
-				<span>Step 5 :</span> Enlever le calcaire = il faut pulvériser du vinaigre blanc, verser du bicarbonate et brosser.
-				<br><span>Attention :</span> le bicarbonate ne peut être versé que dans la cuvette. Pour le couvercle et le pied des WC, versez le bicarbonate sur la brosse puis brossez (après pulvérisation de vinaigre blanc).
-				
-				<br><br>
-
-				<span>Step 6 :</span> Nettoyage du sol = versez de la javel dans le seau et amenez ce dernier sur le sol sale. Le balais magique fera le reste.
-				
-				<br><br>
-
-				<span>NB ULTIME :</span> Si vous souhaitez mettre de la javel dans votre pulvérisateur mais qu'il reste du vinaigre blanc, ou inversement, vous devez vider le contenu restant dans la bouteille de produit adequat.
-			</p>
-		</div>
-
-		<div id="footer">
-			<audio id="idle_music" autoplay loop controls>
-				<source src="medias/MUSICS/ghouls_n_ghosts.mp3" type="audio/mpeg">
-			</audio>
-			<p id="scoreboard">Score : 0 - - - Mouvements : 0.</p>
+			<div id="info-content">
+				<img id="meowzart" src="medias/meowzart/meowzart-face-calme.png" ondragstart="return false;">
+				<h2 id="titre-monologue">Tutoriel - Partie 0 : Introduction.</h2>
+				<p id="monologue">Bien le bonjour et bienvenue dans les toilettes de mon humble établissement, bien évidemment.</p>
+				<div id="nav-monologue">
+					<button id="previous" onmouseover="audio_button_hover.play();" onclick="monolog_prev(); update_meowzart();">Previous</button>
+					<button id="next" onmouseover="audio_button_hover.play();" onclick="monolog_next(); update_meowzart();">Next</button>
+				</div>
+			</div>
 		</div>
 	</div>
+
+	<footer>
+		ⓒ Flush The Toilet - Par Lucas Montagnon et Tom Pillet - Copyright 2020-21
+	</footer>
 </body>
 </html>

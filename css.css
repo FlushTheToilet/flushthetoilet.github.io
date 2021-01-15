@@ -1,5 +1,10 @@
-/* CORPS DE PAGE */
+@font-face {
+	font-family: "Fragmentcore";
+	src: url("medias/Fragmentcore.otf");
+}
 
+
+/* CORPS DE PAGE */
 body {
 	height: 100vh;
 	width: 100vw;
@@ -12,44 +17,62 @@ body {
     user-select: none;
 }
 
+footer {
+	text-align: center;
+	padding-top: 2%;
+	font-family: "Fragmentcore";
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
 
 #page {
-	height: 94%;
+	height: 90%;
 	width: 100%;
 }
 
 #jeu {
-	background-color: red;
 	height: 100%;
 	width: 50%;
 	float: left;
 	position: relative;
 }
 
-#inventaire {
-	background-color: blue;
-	height: 100%;
-	width: 20%;
+#panneau {
 	float: left;
 	position: relative;
+	height: 100%;
+	width: 20%;
+}
+
+#inventaire {
+	display: block;
+	height: 60%;
+	width: 100%;
+	background-image: url("medias/background_inventaire.png");
+	background-size: 100% 100%;
+}
+
+#menu {
+	background-image: url("medias/background_inventaire.png");
+	background-size: 100% 100%;
+	position: absolute;
+	float: left;
+	width: 100%;
+	height: 40%;
 }
 
 #info {
-	background-color: green;
 	height: 100%;
 	width: 30%;
 	float: left;
 	position: relative;
+	background-image: url("medias/background_inventaire.png");
+	background-size: 100% 100%;
 }
 
-#footer > audio {
-	display: inline-block;
-}
 
-#footer > p {
-	margin: 0;
-	display: inline-block;
-}
 
 
 /* IMAGES JEU */
@@ -150,6 +173,7 @@ body {
 	top: 61.5%;
 }
 
+
 /* MOUSSES */
 #mousse_chasse_deau, #mousse_chasse_deau_traitee {
 	position: absolute;
@@ -174,6 +198,7 @@ body {
 	left: 42.4%;
 	top: 63.5%;
 }
+
 
 /* CACAS */
 #caca_cuvette_1 {
@@ -208,6 +233,7 @@ body {
 	top: 87%;
 }
 
+
 /* PIPIS */
 #pisse_cuvette {
 	position: absolute;
@@ -234,73 +260,242 @@ body {
 }
 
 
+
+
 /* ITEMS */
 #ustensiles {
-	display: inline-block;
-	margin: 6% 8% 2% 8%;
-	height: 8%;
+	margin-left: 10%;
+	padding-top: 3%;
+	display: flex;
+	height: 16%;
 	width: 80%;
 }
-#ustensiles > img {
-	margin: 0% 1%;
-	height: 100%;
-	width: 21%;
+#ustensiles::after {
+	content: "";
+	clear: both;
+	display: table;
 }
-.pelle, .sponge, .brosse{
-	max-height: 40%;
+#ustensiles > .column {
+	flex: 25%;
+	padding: 5px;
+}
+#ustensiles > .column > img {
+	width: 100%;
+	cursor: pointer;
+}
+.brosseWC {
+	height: 90%;
+}
+.sponge, .brosse, .pelle {
+	position: relative;
+	height: 40%;
+	top: 50%;
 }
 
 
 #produits {
-	display: inline-block;
-	margin: 6% 10% 2% 10%;
-	height: 10%;
+	margin-left: 10%;
+	padding-top: 3%;
+	display: flex;
+	height: 18%;
 	width: 80%;
 }
-#produits > img {
-	margin: 0% 2%;
-	height: 100%;
-	width: 24%;
+#produits::after {
+	content: "";
+	clear: both;
+	display: table;
 }
-#bicarbonate {
-	max-height: 66%;
-	max-width: 20%;
+#produits > .column {
+	flex: 25%;
+	padding: 5px;
 }
-#vinaigre {
-	max-width: 10%;
+.javel {
+	position: relative;
+	top: 5%;
+	width: 95%;
+	height: 80%;
+	cursor: pointer;
 }
 .pchit {
-	max-width: 18%;
+	position: relative;
+	padding-left: 10%;
+	top: 0%;
+	width: 70%;
+	height: 85%;
+	cursor: pointer;
+}
+.vinaigre {
+	position: relative;
+	padding-left: 20%;
+	top: 5%;
+	width: 40%;
+	height: 80%;
+	cursor: pointer;
+}
+.bicarbonate {
+	position: relative;
+	top: 25%;
+	width: 70%;
+	height: 60%;
+	cursor: pointer;
 }
 
 
 #contenants {
-	display: inline-block;
-	margin: 4% 10% 2% 10%;
-	height: 16%;
+	margin-left: 10%;
+	padding-top: 3%;
+	display: flex;
+	height: 32%;
 	width: 80%;
 }
-#contenants > img {
-	margin: 0% 3%;
-	height: 100%;
-	width: 40%;
+#contenants::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+#contenants > .column {
+	flex: 50%;
+	padding: 5px;
+}
+#contenants > .column > img {
+	width: 80%;
+	padding: 0% 10%;
 }
 #poubelle {
-	max-height: 70%;
+	position: relative;
+	top: 42%;
+	height: 60%;
+}
+.seau {
+	height: 100%;
+	cursor: pointer;
 }
 
 
 
 /* INFORMATIONS / NOTICE */
-span {
-	text-decoration: underline;
-}
-
-#info > p {
+#info-content {
+	height: 96%;
 	width: 90%;
-	color: white;
-	margin: 5%;
-	font-size: 1.2em;
-	text-align: justify;
+	margin: 2% 5%;
 }
 
+#meowzart {
+	display: block;
+	height: 60%;
+	width: 80%;
+	margin: 2% 10%;
+  	-webkit-transform: scaleX(-1);
+  	transform: scaleX(-1);
+}
+
+#titre-monologue {
+	font-family: "Fragmentcore";
+	letter-spacing: 1px;
+	color: white;
+	display: block;
+	margin: 2% 0%;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#monologue {
+	font-family: "Fragmentcore";
+	letter-spacing: 1px;
+	color: white;
+	display: block;
+	height: 25%;
+	margin: 0;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#nav-monologue {
+	display: inline-flex;
+	margin: 0% 5%;
+	width: 90%;
+	height: 6%;
+}
+
+#nav-monologue > button {
+	flex: 42%;
+	margin: 0% 4%;
+
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-family: "Fragmentcore";
+	letter-spacing: 2px;
+
+	cursor: pointer;
+
+	transition-property: font-size, letter-spacing;
+	transition-duration: 1s;
+}
+#nav-monologue > button:hover {
+	background-color: #46A149;
+	font-size: 24px;
+	letter-spacing: 4px;
+}
+
+
+/* MENU */
+#menu > audio {
+	margin: 5% 5% 0% 5%;
+	width: 90%;
+	height: 10%;
+}
+
+#menu > p {
+	font-family: "Fragmentcore";
+	letter-spacing: 1px;
+	margin: 0;
+	color: white;
+	text-align: center;
+	display: block;
+}
+
+#menu-content {
+	width: 100%;
+	height: 90%;
+}
+
+#scoreboard {
+	font-family: "Fragmentcore";
+	letter-spacing: 1px;
+	color: white;
+	text-align: center;
+	display: block;
+	margin: 0;
+}
+
+#restart {
+	height: 16%;
+	width: 60%;
+	margin: 5% 20%;
+
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-family: "Fragmentcore";
+	letter-spacing: 2px;
+
+	cursor: pointer;
+
+	transition-property: letter-spacing, font-size;
+	transition-duration: 1s;
+}
+
+#restart:hover {
+	background-color: #46A149;
+	letter-spacing: 4px;
+	font-size: 24px;
+}
