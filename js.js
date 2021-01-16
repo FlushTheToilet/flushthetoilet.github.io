@@ -528,6 +528,23 @@ function drop(ev) {
 				// A chaque utilisation du pchit, le volume de ce qu'il contient diminue.
 				// On le met en image ici :
 				c++;
+				switch (c) {
+					case 0:
+						document.getElementById(objet).title = 'Pulvérisateur rempli de vinaigre ménager';
+						break;
+					case 1:
+						document.getElementById(objet).title = 'Pulvérisateur presque rempli de vinaigre ménager';
+						break;
+					case 2:
+						document.getElementById(objet).title = 'Pulvérisateur à moitié rempli de vinaigre ménager';
+						break;
+					case 3:
+						document.getElementById(objet).title = 'Pulvérisateur presque vide de vinaigre ménager';
+						break;
+					case 4:
+						document.getElementById(objet).title = 'Pulvérisateur vide';
+						break;
+				}
 				document.getElementById(objet).src = 'medias/items/png/' + tabl_pchit_vinaigre[c] + '.png';
 				document.getElementById(objet).id = tabl_pchit_vinaigre[c];
 			}
@@ -550,6 +567,23 @@ function drop(ev) {
 				}, 200);
 
 				c++;
+				switch (c) {
+					case 0:
+						document.getElementById(objet).title = 'Pulvérisateur rempli de vinaigre ménager';
+						break;
+					case 1:
+						document.getElementById(objet).title = 'Pulvérisateur presque rempli de vinaigre ménager';
+						break;
+					case 2:
+						document.getElementById(objet).title = 'Pulvérisateur à moitié rempli de vinaigre ménager';
+						break;
+					case 3:
+						document.getElementById(objet).title = 'Pulvérisateur presque vide de vinaigre ménager';
+						break;
+					case 4:
+						document.getElementById(objet).title = 'Pulvérisateur vide';
+						break;
+				}
 				document.getElementById(objet).src = 'medias/items/png/' + tabl_pchit_vinaigre[c] + '.png';
 				document.getElementById(objet).id = tabl_pchit_vinaigre[c];
 			}
@@ -619,6 +653,23 @@ function drop(ev) {
 					}, 200);
 
 					c++;
+					switch (c) {
+						case 0:
+							document.getElementById(objet).title = 'Pulvérisateur rempli de vinaigre ménager';
+							break;
+						case 1:
+							document.getElementById(objet).title = 'Pulvérisateur presque rempli de vinaigre ménager';
+							break;
+						case 2:
+							document.getElementById(objet).title = 'Pulvérisateur à moitié rempli de vinaigre ménager';
+							break;
+						case 3:
+							document.getElementById(objet).title = 'Pulvérisateur presque vide de vinaigre ménager';
+							break;
+						case 4:
+							document.getElementById(objet).title = 'Pulvérisateur vide';
+							break;
+					}
 					document.getElementById(objet).src = 'medias/items/png/' + tabl_pchit_vinaigre[c] + '.png';
 					document.getElementById(objet).id = tabl_pchit_vinaigre[c];
 				}
@@ -656,6 +707,23 @@ function drop(ev) {
 				}, 200);
 
 				c++;
+				switch (c) {
+					case 0:
+						document.getElementById(objet).title = 'Pulvérisateur rempli de vinaigre ménager';
+						break;
+					case 1:
+						document.getElementById(objet).title = 'Pulvérisateur presque rempli de vinaigre ménager';
+						break;
+					case 2:
+						document.getElementById(objet).title = 'Pulvérisateur à moitié rempli de vinaigre ménager';
+						break;
+					case 3:
+						document.getElementById(objet).title = 'Pulvérisateur presque vide de vinaigre ménager';
+						break;
+					case 4:
+						document.getElementById(objet).title = 'Pulvérisateur vide';
+						break;
+				}
 				document.getElementById(objet).src = 'medias/items/png/' + tabl_pchit_vinaigre[c] + '.png';
 				document.getElementById(objet).id = tabl_pchit_vinaigre[c];
 			}
@@ -709,6 +777,23 @@ function drop(ev) {
 				}, 200);
 
 				c++;
+				switch (c) {
+					case 0:
+						document.getElementById(objet).title = 'Pulvérisateur rempli de javel';
+						break;
+					case 1:
+						document.getElementById(objet).title = 'Pulvérisateur presque rempli de javel';
+						break;
+					case 2:
+						document.getElementById(objet).title = 'Pulvérisateur à moitié rempli de javel';
+						break;
+					case 3:
+						document.getElementById(objet).title = 'Pulvérisateur presque vide de javel';
+						break;
+					case 4:
+						document.getElementById(objet).title = 'Pulvérisateur vide';
+						break;
+				}
 				document.getElementById(objet).src = 'medias/items/png/' + tabl_pchit_javel[c] + '.png';
 				document.getElementById(objet).id = tabl_pchit_javel[c];
 			}
@@ -731,6 +816,23 @@ function drop(ev) {
 				}, 200);
 
 				c++;
+				switch (c) {
+					case 0:
+						document.getElementById(objet).title = 'Pulvérisateur rempli de javel';
+						break;
+					case 1:
+						document.getElementById(objet).title = 'Pulvérisateur presque rempli de javel';
+						break;
+					case 2:
+						document.getElementById(objet).title = 'Pulvérisateur à moitié rempli de javel';
+						break;
+					case 3:
+						document.getElementById(objet).title = 'Pulvérisateur presque vide de javel';
+						break;
+					case 4:
+						document.getElementById(objet).title = 'Pulvérisateur vide';
+						break;
+				}
 				document.getElementById(objet).src = 'medias/items/png/' + tabl_pchit_javel[c] + '.png';
 				document.getElementById(objet).id = tabl_pchit_javel[c];
 			}
@@ -767,6 +869,23 @@ function drop(ev) {
 				}, 200);
 
 				c++;
+				switch (c) {
+					case 0:
+						document.getElementById(objet).title = 'Pulvérisateur rempli de javel';
+						break;
+					case 1:
+						document.getElementById(objet).title = 'Pulvérisateur presque rempli de javel';
+						break;
+					case 2:
+						document.getElementById(objet).title = 'Pulvérisateur à moitié rempli de javel';
+						break;
+					case 3:
+						document.getElementById(objet).title = 'Pulvérisateur presque vide de javel';
+						break;
+					case 4:
+						document.getElementById(objet).title = 'Pulvérisateur vide';
+						break;
+				}
 				document.getElementById(objet).src = 'medias/items/png/' + tabl_pchit_javel[c] + '.png';
 				document.getElementById(objet).id = tabl_pchit_javel[c];
 			}
@@ -929,6 +1048,7 @@ function drop(ev) {
 				ev.preventDefault();
 				ev.target.id = 'sponge_javelisee';
 				ev.target.src = 'medias/items/png/sponge_javelisee.png';
+				ev.target.title = 'Eponge imbibée de javel';
 			} else if (objet=='pchit_javel_plein' || objet=='pchit_javel_presque_plein' || objet=='pchit_javel_un_peu_vide' || objet=='pchit_javel_presque_vide') {
 				var alea = Math.floor(Math.random() * Math.floor(2));
 				tabl_audio_pchit[alea].play();
@@ -936,8 +1056,26 @@ function drop(ev) {
 				ev.preventDefault();
 				ev.target.id = 'sponge_javelisee';
 				ev.target.src = 'medias/items/png/sponge_javelisee.png';
+				ev.target.title = 'Eponge imbibée de javel';
 
 				c++;
+				switch (c) {
+					case 0:
+						document.getElementById(objet).title = 'Pulvérisateur rempli de javel';
+						break;
+					case 1:
+						document.getElementById(objet).title = 'Pulvérisateur presque rempli de javel';
+						break;
+					case 2:
+						document.getElementById(objet).title = 'Pulvérisateur à moitié rempli de javel';
+						break;
+					case 3:
+						document.getElementById(objet).title = 'Pulvérisateur presque vide de javel';
+						break;
+					case 4:
+						document.getElementById(objet).title = 'Pulvérisateur vide';
+						break;
+				}
 				document.getElementById(objet).src = 'medias/items/png/' + tabl_pchit_javel[c] + '.png';
 				document.getElementById(objet).id = tabl_pchit_javel[c];
 			}
@@ -952,6 +1090,7 @@ function drop(ev) {
 				ev.preventDefault();
 				ev.target.id = 'brosse_bicarbonatee';
 				ev.target.src = 'medias/items/png/brosse_bicarbonatee.png';
+				ev.target.title = 'Brosse soupoudrée de bicarbonate';
 			} else if (objet=='pchit_javel_plein' || objet=='pchit_javel_presque_plein' || objet=='pchit_javel_un_peu_vide' || objet=='pchit_javel_presque_vide') {
 				var alea = Math.floor(Math.random() * Math.floor(2));
 				tabl_audio_pchit[alea].play();
@@ -959,8 +1098,26 @@ function drop(ev) {
 				ev.preventDefault();
 				ev.target.id = 'brosse_javelisee';
 				ev.target.src = 'medias/items/png/brosse_javelisee.png';
+				ev.target.title = 'Brosse humidifiée par de la javel';
 
 				c++;
+				switch (c) {
+					case 0:
+						document.getElementById(objet).title = 'Pulvérisateur rempli de javel';
+						break;
+					case 1:
+						document.getElementById(objet).title = 'Pulvérisateur presque rempli de javel';
+						break;
+					case 2:
+						document.getElementById(objet).title = 'Pulvérisateur à moitié rempli de javel';
+						break;
+					case 3:
+						document.getElementById(objet).title = 'Pulvérisateur presque vide de javel';
+						break;
+					case 4:
+						document.getElementById(objet).title = 'Pulvérisateur vide';
+						break;
+				}
 				document.getElementById(objet).src = 'medias/items/png/' + tabl_pchit_javel[c] + '.png';
 				document.getElementById(objet).id = tabl_pchit_javel[c];
 			}
@@ -973,6 +1130,7 @@ function drop(ev) {
 				ev.preventDefault();
 				ev.target.id = 'brosse_imbibee';
 				ev.target.src = 'medias/items/png/brosse_imbibee.png';
+				ev.target.title = 'Brosse imbibée de javel et de bicarbonate';
 			}
 			break;
 
@@ -984,8 +1142,26 @@ function drop(ev) {
 				ev.preventDefault();
 				ev.target.id = 'brosse_imbibee';
 				ev.target.src = 'medias/items/png/brosse_imbibee.png';
+				ev.target.title = 'Brosse imbibée de javel et de bicarbonate';
 
 				c++;
+				switch (c) {
+					case 0:
+						document.getElementById(objet).title = 'Pulvérisateur rempli de javel';
+						break;
+					case 1:
+						document.getElementById(objet).title = 'Pulvérisateur presque rempli de javel';
+						break;
+					case 2:
+						document.getElementById(objet).title = 'Pulvérisateur à moitié rempli de javel';
+						break;
+					case 3:
+						document.getElementById(objet).title = 'Pulvérisateur presque vide de javel';
+						break;
+					case 4:
+						document.getElementById(objet).title = 'Pulvérisateur vide';
+						break;
+				}
 				document.getElementById(objet).src = 'medias/items/png/' + tabl_pchit_javel[c] + '.png';
 				document.getElementById(objet).id = tabl_pchit_javel[c];
 			}
@@ -999,6 +1175,7 @@ function drop(ev) {
 
 				ev.preventDefault();
 				document.getElementById(objet).src = 'medias/items/png/pchit_vide.png';
+				document.getElementById(objet).title = 'Pulvérisateur vide';
 				document.getElementById(objet).id = 'pchit_vide';
 				c=4;
 			}
@@ -1013,6 +1190,7 @@ function drop(ev) {
 				ev.preventDefault();
 				ev.target.id = 'pchit_javel_plein';
 				ev.target.src = 'medias/items/png/pchit_javel_plein.png';
+				ev.target.title = 'Pulvérisateur rempli de javel';
 				c=0;
 			} else if (objet=='vinaigre') {
 				audio_verser.play();
@@ -1020,6 +1198,7 @@ function drop(ev) {
 				ev.preventDefault();
 				ev.target.id = 'pchit_vinaigre_plein';
 				ev.target.src = 'medias/items/png/pchit_vinaigre_plein.png';
+				ev.target.title = 'Pulvérisateur rempli de vinaigre ménager'
 				c=0;
 			}
 			break;
@@ -1031,6 +1210,7 @@ function drop(ev) {
 				ev.preventDefault();
 				ev.target.id = 'pchit_javel_plein';
 				ev.target.src = 'medias/items/png/pchit_javel_plein.png';
+				ev.target.title = 'Pulvérisateur rempli de javel';
 				c=0;
 			}
 			break;
@@ -1041,6 +1221,7 @@ function drop(ev) {
 				ev.preventDefault();
 				ev.target.id = 'pchit_javel_plein';
 				ev.target.src = 'medias/items/png/pchit_javel_plein.png';
+				ev.target.title = 'Pulvérisateur rempli de javel';
 				c=0;
 			}
 			break;
@@ -1051,6 +1232,7 @@ function drop(ev) {
 				ev.preventDefault();
 				ev.target.id = 'pchit_javel_plein';
 				ev.target.src = 'medias/items/png/pchit_javel_plein.png';
+				ev.target.title = 'Pulvérisateur rempli de javel';
 				c=0;
 			}
 			break;
@@ -1062,6 +1244,7 @@ function drop(ev) {
 				ev.preventDefault();
 				ev.target.id = 'pchit_vinaigre_plein';
 				ev.target.src = 'medias/items/png/pchit_vinaigre_plein.png';
+				ev.target.title = 'Pulvérisateur rempli de vinaigre ménager';
 				c=0;
 			}
 			break;
@@ -1072,6 +1255,7 @@ function drop(ev) {
 				ev.preventDefault();
 				ev.target.id = 'pchit_vinaigre_plein';
 				ev.target.src = 'medias/items/png/pchit_vinaigre_plein.png';
+				ev.target.title = 'Pulvérisateur rempli de vinaigre ménager';
 				c=0;
 			}
 			break;
@@ -1082,6 +1266,7 @@ function drop(ev) {
 				ev.preventDefault();
 				ev.target.id = 'pchit_vinaigre_plein';
 				ev.target.src = 'medias/items/png/pchit_vinaigre_plein.png';
+				ev.target.title = 'Pulvérisateur rempli de vinaigre ménager';
 				c=0;
 			}
 			break;
@@ -1093,6 +1278,7 @@ function drop(ev) {
 				audio_verser.play();
 
 				ev.preventDefault();
+				document.getElementById(objet).title = 'Pulvérisateur vide';
 				document.getElementById(objet).src = 'medias/items/png/pchit_vide.png';
 				document.getElementById(objet).id = 'pchit_vide';
 				c=4;
@@ -1106,6 +1292,7 @@ function drop(ev) {
 				audio_bicarbonate.play();
 
 				ev.preventDefault();
+				document.getElementById(objet).title = 'Brosse soupoudrée de bicarbonate';
 				document.getElementById(objet).src = 'medias/items/png/brosse_bicarbonatee.png';
 				document.getElementById(objet).id = 'brosse_bicarbonatee';
 			}
@@ -1137,17 +1324,20 @@ function drop(ev) {
 					ev.preventDefault();
 					ev.target.id = 'seau_javelise';
 					ev.target.src = 'medias/items/png/seau_javelise.png';
+					ev.target.title = 'Seau d\'eau mélangée à de la javel';
 				}, 260);
 			} else if (objet=='sponge_javelisee') {
 				audio_plouf.play();
 
 				ev.preventDefault();
+				document.getElementById(objet).title = 'Eponge';
 				document.getElementById(objet).src = 'medias/items/png/sponge.png';
 				document.getElementById(objet).id = 'sponge';
 			} else if (objet=='brosse_imbibee' || objet=='brosse_bicarbonatee' || objet=='brosse_javelisee') {
 				audio_plouf.play();
 
 				ev.preventDefault();
+				document.getElementById(objet).title = 'Brosse simple';
 				document.getElementById(objet).src = 'medias/items/png/brosse.png';
 				document.getElementById(objet).id = 'brosse';
 			}
@@ -1158,12 +1348,14 @@ function drop(ev) {
 				audio_plouf.play();
 
 				ev.preventDefault();
+				document.getElementById(objet).title = 'Eponge';
 				document.getElementById(objet).src = 'medias/items/png/sponge.png';
 				document.getElementById(objet).id = 'sponge';
 			} else if (objet=='brosse_imbibee' || objet=='brosse_bicarbonatee' || objet=='brosse_javelisee') {
 				audio_plouf.play();
 
 				ev.preventDefault();
+				document.getElementById(objet).title = 'Brosse simple';
 				document.getElementById(objet).src = 'medias/items/png/brosse.png';
 				document.getElementById(objet).id = 'brosse';
 			}
