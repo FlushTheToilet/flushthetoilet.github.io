@@ -4,6 +4,7 @@
 }
 
 
+
 /* CORPS DE PAGE */
 body {
 	height: 100vh;
@@ -396,7 +397,7 @@ footer {
 	display: block;
 	margin: 2% 0%;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.6em;
 }
 
 #monologue {
@@ -407,7 +408,7 @@ footer {
 	height: 25%;
 	margin: 0;
 	text-align: center;
-	font-size: 1.2em;
+	font-size: 1.3em;
 }
 
 #nav-monologue {
@@ -419,6 +420,7 @@ footer {
 
 #nav-monologue > button {
 	flex: 42%;
+	height: 100%;
 	margin: 0% 4%;
 
 	background-color: #4CAF50;
@@ -427,7 +429,7 @@ footer {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 20px;
 	font-family: "Fragmentcore";
 	letter-spacing: 2px;
 
@@ -438,7 +440,7 @@ footer {
 }
 #nav-monologue > button:hover {
 	background-color: #46A149;
-	font-size: 24px;
+	font-size: 28px;
 	letter-spacing: 4px;
 }
 
@@ -452,7 +454,9 @@ footer {
 
 #menu > p {
 	font-family: "Fragmentcore";
+	padding: 0% 5%;
 	letter-spacing: 1px;
+	font-size: 1.2em;
 	margin: 0;
 	color: white;
 	text-align: center;
@@ -467,6 +471,7 @@ footer {
 #scoreboard {
 	font-family: "Fragmentcore";
 	letter-spacing: 1px;
+	font-size: 1.4em;
 	color: white;
 	text-align: center;
 	display: block;
@@ -484,7 +489,7 @@ footer {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 20px;
 	font-family: "Fragmentcore";
 	letter-spacing: 2px;
 
@@ -497,5 +502,95 @@ footer {
 #restart:hover {
 	background-color: #46A149;
 	letter-spacing: 4px;
-	font-size: 24px;
+	font-size: 28px;
 }
+
+
+@media only screen 
+	and (max-height: 1000px){
+		footer { font-size: 16px; }
+		#titre-monologue { font-size: 1.4em; }
+		#monologue {font-size: 1.1em;}
+		#nav-monologue > button { font-size: 16px; }
+		#nav-monologue > button:hover { font-size: 24px; }
+		#restart { font-size: 16px; }
+		#restart:hover { font-size: 24px; }
+		#menu > p { font-size: 1em; }
+		#scoreboard { font-size: 1.2em; }
+	}
+
+@media only screen 
+	and (max-height: 900px){
+		footer { font-size: 16px; }
+		#titre-monologue { font-size: 1.3em; }
+		#monologue {font-size: 1.1em;}
+		#nav-monologue > button { font-size: 14px; }
+		#nav-monologue > button:hover { font-size: 20px; }
+		#restart { font-size: 14px; }
+		#restart:hover { font-size: 20px; }
+	}
+
+@media only screen
+	and (max-height: 800px) {
+		footer { font-size: 16px; }
+		#titre-monologue { font-size: 1em; }
+		#monologue {font-size: 0.8em;}
+		#nav-monologue > button { font-size: 14px; }
+		#nav-monologue > button:hover { font-size: 20px; }
+		#restart { font-size: 14px; }
+		#restart:hover { font-size: 20px; }
+		#menu > p { font-size: 14px; }
+		#scoreboard { font-size: 14px; }
+	}
+
+@media only screen
+	and (max-height: 700px) {
+		footer { font-size: 14px; }
+		#titre-monologue { font-size: 0.94em; }
+		#monologue {font-size: 0.82em;}
+		#nav-monologue > button { font-size: 12px; }
+		#nav-monologue > button:hover { font-size: 16px; }
+		#restart { font-size: 12px; }
+		#restart:hover { font-size: 16px; }
+		#menu > p { font-size: 13px; }
+		#scoreboard { font-size: 13px; }
+	}
+
+@media only screen
+	and (max-height: 600px) {
+		footer { font-size: 12px; }
+		#titre-monologue { font-size: 0.72em; }
+		#monologue {font-size: 0.58em;}
+		#nav-monologue > button { font-size: 9px; }
+		#nav-monologue > button:hover { font-size: 12px; }
+		#restart { font-size: 9px; }
+		#restart:hover { font-size: 12px; }
+		#menu > p { font-size: 10px; }
+		#scoreboard { font-size: 12px; }
+	}
+
+@media only screen
+	and (max-height: 500px) {
+		footer { font-size: 8px; }
+		#titre-monologue { font-size: 0.56em; }
+		#monologue {font-size: 0.5em;}
+		#nav-monologue > button { font-size: 7px; }
+		#nav-monologue > button:hover { font-size: 10px; letter-spacing: 3px; }
+		#restart { font-size: 7px; }
+		#restart:hover { font-size: 10px; letter-spacing: 3px; }
+		#menu > p { font-size: 8px; }
+		#scoreboard { font-size: 10px; }
+	}
+
+@media only screen
+	and (max-height: 400px) {
+		footer { font-size: 4px; }
+		#titre-monologue { font-size: 0.36em; }
+		#monologue {font-size: 0.3em;}
+		#nav-monologue > button { font-size: 6px; letter-spacing: 1px; }
+		#nav-monologue > button:hover { font-size: 8px; letter-spacing: 2px; }
+		#restart { font-size: 6px; letter-spacing: 1px; }
+		#restart:hover { font-size: 8px; letter-spacing: 2px; }
+		#menu > p { font-size: 6px; }
+		#scoreboard { font-size: 8px; }
+	}
