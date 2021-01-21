@@ -61,9 +61,11 @@ var tabl_monolog = ['Bien le bonjour et bienvenue dans les toilettes de mon humb
 					'La dernière étape ! Et probablement la plus simple et intuitive à réaliser, de toute évidence.',
 					'Pour ce faire, versez de la javel dans le seau et amenez le sur le sol maculé.',
 					'Le magnifique balai que nous possédons se chargera du reste.',
+		    
+		    			// STEP 7 (NB)
 					'J\'ai oublié de vous prévenir, s’il vous reste du vinaigre blanc ou de la javel dans votre vaporisateur, vous devez le vider dans la bouteille du contenu adéquat, bien évidemment.',
 
-					// FIN
+					// FIN - CONCLUSION
 					'Bien. Je pense que cela suffira, bien évidemment.',
 					'In fine, je désire vous apporter ma gratitude pour votre intervention.',
 					'Sans vous, cette salle d\'eau ne saurait retrouver sa jeunesse étincelante.',
@@ -1370,98 +1372,77 @@ function drop(ev) {
 }
 
 
-function monolog_prev() {
+function monolog_nav(sens) {
 	audio_button_click.play();
-	if (m > 0) {
+	
+	if (sens == "gauche" && m > 0) {
 		m--;
-		document.getElementById("monologue").innerHTML = tabl_monolog[m];
-		
-		if (m<4) {
-			document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 0 : Introduction.";
-		}
-		else if (m>3 && m<10) {
-			document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 1 : Nettoyer les grafitis.";
-		}
-		else if (m>9 && m<15) {
-			document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 2 : Ramasser les excréments.";
-		}
-		else if (m>14 && m<23) {
-			document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 3 : Nettoyer l'urine.";
-		}
-		else if (m>22 && m<30) {
-			document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 4 : La moisissure.";
-		}
-		else if (m>29 && m<36) {
-			document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 5 : Retirer le calcaire.";
-		}
-		else if (m>35 && m<40) {
-			document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 6 : Nettoyage du sol.";
-		}
-		else if (m>39) {
-			document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 7 : Conclusion.";
-		}
 	}
-	return m;
-}
-function monolog_next() {
-	audio_button_click.play();
-	if (m < tabl_monolog.length-1) {
+	else if (sens == "droite" && m < tabl_monolog.length-1) {
 		m++;
-		document.getElementById("monologue").innerHTML = tabl_monolog[m];
-		
-		if (m<4) {
-			document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 0 : Introduction.";
-		}
-		else if (m>3 && m<10) {
-			document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 1 : Nettoyer les grafitis.";
-		}
-		else if (m>9 && m<15) {
-			document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 2 : Ramasser les excréments.";
-		}
-		else if (m>14 && m<23) {
-			document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 3 : Nettoyer l'urine.";
-		}
-		else if (m>22 && m<30) {
-			document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 4 : La moisissure.";
-		}
-		else if (m>29 && m<36) {
-			document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 5 : Retirer le calcaire.";
-		}
-		else if (m>35 && m<40) {
-			document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 6 : Nettoyage du sol.";
-		}
-		else if (m>39) {
-			document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 7 : Conclusion.";
-		}
 	}
+	
+	document.getElementById("monologue").innerHTML = tabl_monolog[m];
+	
+	if (m<4) {
+		document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 0 : Introduction.";
+	}
+	else if (m>3 && m<10) {
+		document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 1 : Nettoyer les grafitis.";
+	}
+	else if (m>9 && m<15) {
+		document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 2 : Ramasser les excréments.";
+	}
+	else if (m>14 && m<23) {
+		document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 3 : Nettoyer l'urine.";
+	}
+	else if (m>22 && m<30) {
+		document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 4 : La moisissure.";
+	}
+	else if (m>29 && m<36) {
+		document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 5 : Retirer le calcaire.";
+	}
+	else if (m>35 && m<39) {
+		document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 6 : Nettoyage du sol.";
+	}
+	else if (m==39) {
+		document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 7 : Nota Bene.";
+	}
+	else if (m>40) {
+		document.getElementById("titre-monologue").innerHTML = "Tutoriel - Partie 8 : Conclusion.";
+	}
+	
 	return m;
 }
+
 function update_meowzart() {
-	if(m==3 || m==5 || m==7 || m==19 || m==22 || m==24 || m==27 || m==30 || m==35 || m==40 || m==42) {
-		document.getElementById("meowzart").src = "medias/meowzart/meowzart-calme.png";
-	}
-	else if (m==10 || m==15 || m==16) {
-		document.getElementById("meowzart").src = "medias/meowzart/meowzart-colere.png";
-	}
-	else if (m==14 || m==18 || m==26 || m==32 || m==37) {
-		document.getElementById("meowzart").src = "medias/meowzart/meowzart-montre.png";
-	}
-	else if (m==11 || m==23) {
-		document.getElementById("meowzart").src = "medias/meowzart/meowzart-triste.png";
-	}
-	else if (m==0 || m==6 || m==8 || m==12 || m==13 || m==17 || m==25 || m==29 || m==31 || m==36 || m==39 || m==41 || m==43) {
-		document.getElementById("meowzart").src = "medias/meowzart/meowzart-face-calme.png";
-	}
-	else if (m==4 || m==20 || m==33) {
-		document.getElementById("meowzart").src = "medias/meowzart/meowzart-face-colere.png";
-	}
-	else if (m==1 || m==9 || m==21 || m==28 || m==34) {
-		document.getElementById("meowzart").src = "medias/meowzart/meowzart-face-montre.png";
-	}
-	else if (m==2) {
-		document.getElementById("meowzart").src = "medias/meowzart/meowzart-face-triste.png";
-	}
-	else if (m==38) {
-		document.getElementById("meowzart").src = "medias/meowzart/meowzart-sublime.gif";
+	switch (m) {
+		case 3: case 5: case 7: case 19: case 22: case 24: case 27: case 30: case 35: case 40: case 42:
+			document.getElementById("meowzart").src = "medias/meowzart/meowzart-calme.png";
+			break;
+		case 10: case 15: case 16:
+			document.getElementById("meowzart").src = "medias/meowzart/meowzart-colere.png";
+			break;
+		case 14: case 18: case 26: case 32: case 37:
+			document.getElementById("meowzart").src = "medias/meowzart/meowzart-montre.png";
+			break;
+		case 11: case 23:
+			document.getElementById("meowzart").src = "medias/meowzart/meowzart-triste.png";
+			break;
+		case 0: case 6: case 8: case 12: case 13: case 17: case 25: case 29: case 31: case 36: case 39: case 41: case 43:
+			document.getElementById("meowzart").src = "medias/meowzart/meowzart-face-calme.png";
+			break;
+		case 4: case 20: case 33: 
+			document.getElementById("meowzart").src = "medias/meowzart/meowzart-face-colere.png";
+			break;
+		case 1: case 9: case 21: case 28: case 34:
+			document.getElementById("meowzart").src = "medias/meowzart/meowzart-face-montre.png";
+			break;
+		case 2: 
+			document.getElementById("meowzart").src = "medias/meowzart/meowzart-face-triste.png";
+			break;
+		case 38:
+			document.getElementById("meowzart").src = "medias/meowzart/meowzart-sublime.gif";
+			break;
 	}
 }
