@@ -44,10 +44,10 @@ var tabl_monolog = ['Bien le bonjour et bienvenue dans les toilettes de mon humb
 					'Je ne comprends point mes subordonnés... Comment diable peut-on laisser de telles immondices se déployer ainsi ?',
 					'Bon, ressaisissons-nous... Et trêve de bavardage.',
 					'Bien évidemment.',
-					'Avant toute chose, il vous faut remplir le vaporisateur de javel afin d\'en pulvériser sur ces moultes traces d\'humidité.',
+					'Avant toute chose, il vous faut remplir le vaporisateur de javel afin d\'en pulvériser sur ces moultes déchets d\'humidité.',
 					'Ceci fait, vous pouvez lui rendre sa pureté en passant la brosse dessus.',
 					'Pour celles présentes dans les WC, la brosse de toilettes est nécessaire, bien évidemment.',
-					'Dans le cas où le produit est déposé sur la brosse, il vous est impossible de brosser la moisissure.',
+					'Dans le cas où du produit est déposé sur la brosse, il vous est impossible de brosser la moisissure.',
 
 					// STEP 5
 					'Il est impressionnant de voir ce sédiment être présent dans de si improbables recoins.',
