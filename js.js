@@ -10,7 +10,7 @@ var items = document.getElementsByClassName("items");
 document.getElementById('idle_music').volume = 0.30;
 
 // Tableau pour le monologue
-var tabl_monolog = ['Bien le bonjour et bienvenue dans les toilettes de mon humble établissement, bien évidemment.',
+var tabl_monolog = ['Bien le bonjour et bienvenue dans les toilettes "Drag your poop and drop it" de mon humble établissement, bien évidemment.',
 					'Comme vous pouvez le constater, ceux-ci ont été souillés par de vils personnages !',
 					'J\'aimerais pouvoir les nettoyer moi-même mais mon emploi du temps m\'en empêche. M\'accorderiez-vous l\'obligeance de vous en occuper à ma place ?',
 					'Afin de rendre à ces latrines leur traditionnelle lueur, j\'ai moi-même modestement noté des instructions qui vous aideront à réaliser cette désagréable tâche, bien évidemment.',
